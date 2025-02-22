@@ -170,6 +170,9 @@
             cmp_luasnip.enable = true;
             treesitter-context.enable = true;
             nvim-surround.enable = true;
+            vimtex = {
+              enable = true;
+            };
           };
           opts = {
             guicursor = "";
