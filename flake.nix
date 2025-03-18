@@ -87,6 +87,9 @@
                   enable = true;
                   filetypes = [ "html" ];
                 };
+                gopls = {
+                  enable = true;
+                };
               };
             };
             cmp = {
