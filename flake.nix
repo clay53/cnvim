@@ -199,6 +199,7 @@
             updatetime = 50;
             linebreak = true;
             breakindent = true;
+            fixeol = false;
           };
           globals = {
             mapleader = " ";
