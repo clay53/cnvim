@@ -90,6 +90,7 @@
                 gopls = {
                   enable = true;
                 };
+                dotls.enable = true;
               };
             };
             cmp = {
