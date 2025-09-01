@@ -91,6 +91,7 @@
                   enable = true;
                 };
                 dotls.enable = true;
+                clangd.enable = true;
               };
             };
             cmp = {
