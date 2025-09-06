@@ -94,6 +94,11 @@
                 clangd.enable = true;
                 omnisharp = {
                   enable = true;
+                  filetypes = [ "cs" ];
+                  settings = {
+                    enableRoslynAnalyzers = true;
+                    enableImportCompletion = true;
+                  };
                 };
               };
             };
