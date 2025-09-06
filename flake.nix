@@ -32,10 +32,10 @@
                 };
               };
             };
-            harpoon = {
-              enable = true;
-              enableTelescope = true;
-            };
+            #harpoon = {
+            #  enable = true;
+            #  enableTelescope = true;
+            #};
             undotree.enable = true;
             fugitive.enable = true;
             lsp = {
@@ -265,36 +265,36 @@
               key = "<leader>ps";
               action = { __raw = "function() require(\"telescope.builtin\").grep_string({ search = vim.fn.input(\"Grep > \") }); end"; };
             }
-            {
-              mode = "n";
-              key = "<leader>a";
-              action = { __raw = "require(\"harpoon.mark\").add_file"; };
-            }
-            {
-              mode = "n";
-              key = "<C-e>";
-              action = { __raw = "require(\"harpoon.ui\").toggle_quick_menu"; };
-            }
-            {
-              mode = "n";
-              key = "<C-h>";
-              action = { __raw = "function () require(\"harpoon.ui\").nav_file(1) end"; };
-            }
-            {
-              mode = "n";
-              key = "<C-t>";
-              action = { __raw = "function () require(\"harpoon.ui\").nav_file(2) end"; };
-            }
-            {
-              mode = "n";
-              key = "<C-n>";
-              action = { __raw = "function () require(\"harpoon.ui\").nav_file(3) end"; };
-            }
-            {
-              mode = "n";
-              key = "<C-s>";
-              action = { __raw = "function () require(\"harpoon.ui\").nav_file(4) end"; };
-            }
+            #{
+            #  mode = "n";
+            #  key = "<leader>a";
+            #  action = { __raw = "require(\"harpoon.mark\").add_file"; };
+            #}
+            #{
+            #  mode = "n";
+            #  key = "<C-e>";
+            #  action = { __raw = "require(\"harpoon.ui\").toggle_quick_menu"; };
+            #}
+            #{
+            #  mode = "n";
+            #  key = "<C-h>";
+            #  action = { __raw = "function () require(\"harpoon.ui\").nav_file(1) end"; };
+            #}
+            #{
+            #  mode = "n";
+            #  key = "<C-t>";
+            #  action = { __raw = "function () require(\"harpoon.ui\").nav_file(2) end"; };
+            #}
+            #{
+            #  mode = "n";
+            #  key = "<C-n>";
+            #  action = { __raw = "function () require(\"harpoon.ui\").nav_file(3) end"; };
+            #}
+            #{
+            #  mode = "n";
+            #  key = "<C-s>";
+            #  action = { __raw = "function () require(\"harpoon.ui\").nav_file(4) end"; };
+            #}
             {
               mode = "n";
               key = "<leader>u";
