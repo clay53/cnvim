@@ -92,6 +92,9 @@
                 };
                 dotls.enable = true;
                 clangd.enable = true;
+                omnisharp = {
+                  enable = true;
+                };
               };
             };
             cmp = {
