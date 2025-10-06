@@ -2,7 +2,7 @@
   description = "Flake for Clayton's Neovim config";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixpkgs-unstable";
     nixvimFlake = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -18,11 +18,14 @@
         inherit pkgs;
         module = {
           colorschemes.catppuccin.enable = true;
-          plugins = {
-            telescope = {
+          dependencies = {
+            bat = {
               enable = true;
-              batPackage = pkgs.ripgrep;
+              package = pkgs.ripgrep;
             };
+          };
+          plugins = {
+            telescope.enable = true;
             web-devicons.enable = true;
             treesitter = {
               enable = true;
