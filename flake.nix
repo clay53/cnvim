@@ -189,6 +189,9 @@
             vimtex = {
               enable = true;
             };
+            cord = {
+              enable = true;
+            };
           };
           opts = {
             guicursor = "";
