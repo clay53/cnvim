@@ -85,7 +85,7 @@
                   #package = pkgs.ocamlPackages.lsp;
                   package = null;
                 };
-                zls.enable = true;
+                #zls.enable = true;
                 ltex = {
                   enable = true;
                   filetypes = [ "html" ];
