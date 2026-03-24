@@ -18,9 +18,9 @@
         inherit pkgs;
         module = {
           imports = [
+            ./lsp.nix
             ./markdown-preview.nix
             ./sleuth.nix
-            ./system-verilog.nix
             ./telescope.nix
           ];
           colorschemes.catppuccin.enable = true;
