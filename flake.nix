@@ -18,6 +18,7 @@
         inherit pkgs;
         module = {
           imports = [
+            ./sleuth.nix
             ./telescope.nix
           ];
           colorschemes.catppuccin.enable = true;
@@ -28,7 +29,6 @@
             };
           };
           plugins = {
-            sleuth.enable = true;
             web-devicons.enable = true;
             treesitter = {
               enable = true;
