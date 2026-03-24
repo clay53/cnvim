@@ -18,6 +18,7 @@
         inherit pkgs;
         module = {
           imports = [
+            ./markdown-preview.nix
             ./sleuth.nix
             ./telescope.nix
           ];
