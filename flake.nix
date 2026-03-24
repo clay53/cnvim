@@ -20,6 +20,7 @@
           imports = [
             ./markdown-preview.nix
             ./sleuth.nix
+            ./system-verilog.nix
             ./telescope.nix
           ];
           colorschemes.catppuccin.enable = true;
