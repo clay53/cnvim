@@ -2,9 +2,9 @@
   description = "Flake for Clayton's Neovim config";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixpkgs-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.11";
     nixvimFlake = {
-      url = "github:nix-community/nixvim";
+      url = "github:nix-community/nixvim/nixos-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -17,6 +17,9 @@
       nixvimModule = {
         inherit pkgs;
         module = {
+          imports = [
+            ./telescope.nix
+          ];
           colorschemes.catppuccin.enable = true;
           dependencies = {
             bat = {
@@ -25,7 +28,7 @@
             };
           };
           plugins = {
-            telescope.enable = true;
+            sleuth.enable = true;
             web-devicons.enable = true;
             treesitter = {
               enable = true;
@@ -260,21 +263,6 @@
               mode = "n";
               key = "<leader>pv";
               action = { __raw = "vim.cmd.Ex"; };
-            }
-            {
-              mode = "n";
-              key = "<leader>pf";
-              action = { __raw = "require(\"telescope.builtin\").find_files, {}"; };
-            }
-            {
-              mode = "n";
-              key = "<C-p>";
-              action = { __raw = "require(\"telescope.builtin\").find_files, {}"; };
-            }
-            {
-              mode = "n";
-              key = "<leader>ps";
-              action = { __raw = "function() require(\"telescope.builtin\").grep_string({ search = vim.fn.input(\"Grep > \") }); end"; };
             }
             #{
             #  mode = "n";
