@@ -18,8 +18,7 @@
         inherit pkgs;
         module = {
           imports = [
-            ./lsp.nix
-            ./markdown-preview.nix
+            ./tools-by-language/default.nix
             ./sleuth.nix
             ./telescope.nix
           ];
@@ -191,9 +190,6 @@
             cmp_luasnip.enable = true;
             treesitter-context.enable = true;
             nvim-surround.enable = true;
-            vimtex = {
-              enable = true;
-            };
             cord = {
               enable = true;
             };
