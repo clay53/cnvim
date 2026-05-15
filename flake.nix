@@ -89,11 +89,6 @@
                   marksman.enable = true;
                   phpactor.enable = true;
                   nil_ls.enable = true;
-                  ocamllsp = {
-                    enable = true;
-                    #package = pkgs.ocamlPackages.lsp;
-                    package = null;
-                  };
                   #zls.enable = true;
                   ltex = {
                     enable = true;
