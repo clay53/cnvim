@@ -88,7 +88,6 @@
                   bashls.enable = true;
                   marksman.enable = true;
                   phpactor.enable = true;
-                  nil_ls.enable = true;
                   #zls.enable = true;
                   ltex = {
                     enable = true;
