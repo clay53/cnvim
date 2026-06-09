@@ -9,6 +9,7 @@
     ./qml.nix
     ./system-verilog.nix
     ./typst.nix
+    ./vue.nix
     ./wgsl.nix
   ];
 }
