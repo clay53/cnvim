@@ -81,7 +81,6 @@
                     installCargo = false;
                     installRustc = false;
                   };
-                  ts_ls.enable = true;
                   cssls.enable = true;
                   jsonls.enable = true;
                   html.enable = true;
