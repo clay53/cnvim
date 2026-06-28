@@ -74,13 +74,6 @@
                   };
                 };
                 servers = {
-                  rust_analyzer = {
-                    enable = true;
-                    #installCargo = true;
-                    #installRustc = true;
-                    installCargo = false;
-                    installRustc = false;
-                  };
                   cssls.enable = true;
                   jsonls.enable = true;
                   html.enable = true;

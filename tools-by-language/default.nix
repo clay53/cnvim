@@ -7,6 +7,7 @@
     ./ocaml.nix
     ./python.nix
     ./qml.nix
+    ./rust.nix
     ./system-verilog.nix
     ./typst.nix
     ./vue.nix
